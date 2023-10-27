@@ -1,0 +1,14 @@
+package newsapi2.newsapi.entities;
+
+import java.util.List;
+
+public class Articles {
+	private List<Source> source;
+	private String author;
+	private String title;
+	private String desc;
+	private String url;
+	private String urltoimage;
+	private String publishedat;
+	private String content;
+}

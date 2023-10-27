@@ -1,0 +1,5 @@
+package newsapi2.newsapi.service;
+
+public interface Services {
+
+}

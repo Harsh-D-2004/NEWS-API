@@ -1,0 +1,11 @@
+package newsapi2.newsapi.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import newsapi2.newsapi.dao.ArticleDao;
+
+public class ServiceImpl {
+	
+	@Autowired
+	private ArticleDao articledao;
+}

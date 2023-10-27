@@ -1,0 +1,99 @@
+package newsapi2.newsapi.entities;
+
+import java.util.List;
+
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+
+public class Articles {
+	private List<Source> source;
+	private String author;
+	private String title;
+	private String description;
+	private String url;
+	private String urltoimage;
+	private String publishedat;
+	private String content;
+	
+	public Articles(List<Source> source, String author, String title, String description, String url, String urltoimage,
+			String publishedat, String content) {
+		super();
+		this.source = source;
+		this.author = author;
+		this.title = title;
+		this.description = description;
+		this.url = url;
+		this.urltoimage = urltoimage;
+		this.publishedat = publishedat;
+		this.content = content;
+	}
+
+	public List<Source> getSource() {
+		return source;
+	}
+
+	public void setSource(List<Source> source) {
+		this.source = source;
+	}
+
+	public String getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getdescription() {
+		return description;
+	}
+
+	public void setdescription(String description) {
+		this.description = description;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+	public String getUrltoimage() {
+		return urltoimage;
+	}
+
+	public void setUrltoimage(String urltoimage) {
+		this.urltoimage = urltoimage;
+	}
+
+	public String getPublishedat() {
+		return publishedat;
+	}
+
+	public void setPublishedat(String publishedat) {
+		this.publishedat = publishedat;
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+	
+	
+	
+	
+}

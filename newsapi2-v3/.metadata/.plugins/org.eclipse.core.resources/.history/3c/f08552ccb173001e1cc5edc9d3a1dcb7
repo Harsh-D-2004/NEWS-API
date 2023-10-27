@@ -1,0 +1,9 @@
+package newsapi2.newsapi.service;
+
+import newsapi2.newsapi.dao.ArticleDao;
+
+public class ServiceImpl {
+	
+	
+	private ArticleDao articledao;
+}
