@@ -1,0 +1,25 @@
+package newsapi2.newsapi.entities;
+
+import java.util.List;
+
+import lombok.*;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+
+public class NewsResponse {
+	private String status;
+	private String totalresults;
+	private List<Articles> articles;
+	
+	public NewsResponse(String status, String totalresults, List<Articles> articles) {
+		super();
+		this.status = status;
+		this.totalresults = totalresults;
+		this.articles = articles;
+	}
+	
+	
+	
+}

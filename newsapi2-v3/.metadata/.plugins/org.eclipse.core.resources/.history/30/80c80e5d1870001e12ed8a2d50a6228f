@@ -1,0 +1,13 @@
+package newsapi2.newsapi.entities;
+
+import java.util.List;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+
+public class NewsResponse {
+	private String status;
+	private String totalresults;
+	private List<Articles> articles;
+}

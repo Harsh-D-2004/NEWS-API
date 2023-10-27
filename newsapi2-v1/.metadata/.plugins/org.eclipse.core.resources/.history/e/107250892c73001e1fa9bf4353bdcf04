@@ -1,0 +1,5 @@
+package newsapi2.newsapi.dao;
+
+public class ArticlesDao extends JpaRepository<>{
+
+}

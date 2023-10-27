@@ -1,0 +1,14 @@
+package newsapi2.newsapi.dao;
+
+import java.beans.JavaBean;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+
+import newsapi2.newsapi.entities.Articles;
+
+@EnableJpaRepositories
+@JavaBean
+public interface ArticlesDao extends JpaRepository<Articles , String>{
+	
+}

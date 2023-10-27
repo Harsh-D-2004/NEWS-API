@@ -1,0 +1,9 @@
+package newsapi2.newsapi.entities;
+
+import java.util.List;
+
+public class NewsResponse {
+	private String status;
+	private String totalresults;
+	private List<Articles> articles;
+}

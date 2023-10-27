@@ -1,0 +1,31 @@
+package newsapi2.newsapi.services;
+
+import java.util.List;
+
+import newsapi2.newsapi.entities.Articles;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import newsapi2.newsapi.dao.ArticlesDao;
+import newsapi2.newsapi.entities.Source;
+
+public class ServiceImpl implements Services{
+	
+	@Autowired
+	private ArticlesDao articlesdao;
+	private Source source;
+
+	@Override
+	public static String saveArticles(Articles article) {
+		articlesdao.save(article);
+		source = null;
+		
+		return "Article id : " + source.getId()+"is saved"; 
+	}
+
+	@Override
+	public List<Articles> getAllArticles() {
+		
+		return articlesdao.findAll();
+	}
+}

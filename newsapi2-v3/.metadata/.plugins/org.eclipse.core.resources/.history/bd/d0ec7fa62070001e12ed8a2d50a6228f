@@ -1,0 +1,57 @@
+package newsapi2.newsapi.entities;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+
+public class NewsResponse {
+	private String status;
+	private String totalresults;
+	private List<Articles> articles;
+	
+
+	public NewsResponse()
+	{
+		super();
+		this.status = null;
+		this.totalResults = null;
+		this.articles = null;
+	}
+	
+	public NewsResponse(String status, String totalresults, List<Articles> articles) {
+		super();
+		this.status = status;
+		this.totalResults = totalResults;
+		this.articles = articles;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public String getTotalresults() {
+		return totalresults;
+	}
+
+	public void setTotalresults(String totalresults) {
+		this.totalresults = totalresults;
+	}
+
+	public List<Articles> getArticles() {
+		return articles;
+	}
+
+	public void setArticles(List<Articles> articles) {
+		this.articles = articles;
+	}
+	
+	
+	
+	
+	
+}

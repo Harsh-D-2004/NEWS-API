@@ -1,0 +1,7 @@
+package newsapi2.newsapi.services;
+
+public class ServiceImpl {
+	
+	@Autowired
+	private CourseDao coursedoa;
+}

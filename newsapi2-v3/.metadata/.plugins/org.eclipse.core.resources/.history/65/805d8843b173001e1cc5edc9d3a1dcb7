@@ -1,0 +1,129 @@
+package newsapi2.newsapi.entities;
+
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+
+@Entity
+public class Articles {
+	@JsonProperty("source")
+	private List<Source> source;
+	
+	private String author;
+	private String title;
+	private String description;
+	private String url;
+	private String urlToImage;
+	private String publishedAt;
+	private String content;
+	
+	private long id;
+	
+	public Articles()
+	{
+		super();
+		this.source = null;
+		this.author = null;
+		this.title = null;
+		this.description = null;
+		this.url = null;
+		this.urlToImage = null;
+		this.publishedAt = null;
+		this.content = null;
+		this.id = 0;
+	}
+	
+	public Articles(List<Source> source, String author, String title, String description, String url, String urlToImage,
+			String publishedAt, String content , long id) {
+		super();
+		this.source = source;
+		this.author = author;
+		this.title = title;
+		this.description = description;
+		this.url = url;
+		this.urlToImage = urlToImage;
+		this.publishedAt = publishedAt;
+		this.content = content;
+		this.id = id;
+	}
+
+	public List<Source> getSource() {
+		return source;
+	}
+
+	public void setSource(List<Source> source) {
+		this.source = source;
+	}
+
+	public String getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getdescription() {
+		return description;
+	}
+
+	public void setdescription(String description) {
+		this.description = description;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+	public String geturlToImage() {
+		return urlToImage;
+	}
+
+	public void seturlToImage(String urlToImage) {
+		this.urlToImage = urlToImage;
+	}
+
+	public String getpublishedAt() {
+		return publishedAt;
+	}
+
+	public void setpublishedAt(String publishedAt) {
+		this.publishedAt = publishedAt;
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+	
+	public long getid() {
+		return id;
+	}
+
+	public void setid(long id) {
+		this.id = id;
+	}
+	
+	
+	
+	
+}

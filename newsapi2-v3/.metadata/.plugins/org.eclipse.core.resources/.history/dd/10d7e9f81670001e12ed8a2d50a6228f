@@ -1,0 +1,36 @@
+package newsapi2.newsapi;
+
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class NewsapiApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(NewsapiApplication.class, args);
+		
+		try
+		{
+			var url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=464eaef5688147f0a7893b022e158730";
+			
+			var request = HttpRequest.newBuilder().GET().uri(URI.create(url)).build();
+			
+			var client = HttpClient.newBuilder().build();
+			
+			var response = client.send(request, HttpResponse.BodyHandlers.ofString());
+			
+			System.out.println(response.statusCode());
+			System.out.println(response.body());
+			
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+
+}
